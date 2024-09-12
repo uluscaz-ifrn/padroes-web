@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+}
+
+body > form {
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+body > form > input[type='text'], body > form > input[type='email'], body > form > textarea {
+    padding: 10px;
+}
+
+body > form > input, body > form > textarea {
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+    height: 40px;
+    font-size: 1.3em;
+}
+
+body > form > textarea {
+    height: 150px;
+}
+
+body > form > input[type='submit'] {
+    background-color: rgb(56, 196, 56);
+    border: none;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    body > form {
+        width: 50%;
+    }
+
+    /* body > form > input, body > form > textarea {
+        width: 50%;
+    } */
+}

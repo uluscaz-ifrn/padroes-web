@@ -1,0 +1,63 @@
+main > .noticias {
+    border: 2px solid red;
+}
+
+main > .entretenimentos {
+    border: 2px solid green;
+}
+
+main > .esportes {
+    border: 2px solid orange;
+}
+
+main, main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    border: 1px solid blue;
+    width: 100%;
+}
+
+section > .noticia {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+section > .entretenimento {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+section > .esporte {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+section.noticias > .noticia > a {
+    color: red;
+}
+
+section.entretenimentos > .entretenimento > a {
+    color: green;
+}
+
+section.esportes > .esporte > a {
+    color: orange;
+}
+
+@media (min-width: 700px) {
+    main, main > section {
+        flex-direction: row;
+    }
+
+    main > section {
+        width: 33.33%;
+        flex-wrap: wrap;
+    }
+    
+    section > .noticia, section > .entretenimento, section > .esporte {
+        width: 50%;
+    }
+}

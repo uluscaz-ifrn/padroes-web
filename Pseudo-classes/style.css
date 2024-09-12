@@ -1,0 +1,27 @@
+a:hover {
+    color: red;
+}
+
+li > a + span {
+    display: none;
+}
+
+li > a:hover + span {
+    display: inline;
+}
+
+li:first-child > a {
+    color: rgb(138, 138, 46);
+}
+
+li:last-child > a {
+    color: rgb(17, 122, 17);
+}
+
+.bloco > label + input:focus {
+    border: 2px solid green;
+}
+
+.bloco > label, .bloco > input {
+    display: block;
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body > section > article {
+    background-color: rgb(250, 186, 66);
+    padding: 30px;
+    margin: 10px;
+}
+
+body > section > article > h1 {
+    margin: 0 0 20px 0;
+}
+
+@media (min-width: 768px) {
+    body > section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > section > article {
+        width: 50%;
+    }
+}

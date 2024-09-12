@@ -1,0 +1,27 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+nav > ul > li {
+    display: inline;
+}
+
+nav > ul > li > a {
+    border: 1px solid rgb(0, 0, 255);
+    padding: 5px 8px;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+    background-color: rgb(80, 80, 241);
+    text-decoration: none;
+    color: #fff;
+}
+
+main > .esporte a {
+    color: green;
+}
+
+main > .entretenimento a {
+    color: red;
+}

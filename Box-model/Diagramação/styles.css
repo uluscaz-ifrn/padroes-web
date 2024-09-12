@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+#section-1 {
+    color: red;
+    max-width: 33%;
+}
+
+#section-2 {
+    color: green;
+    margin: 0 0 0 10px;
+    max-width: 33%;
+}
+
+#section-3 {
+    color: darkgoldenrod;
+    margin: 0 0 0 10px;
+    max-width: 33%;
+}
+
+hr {
+    width: 10px;
+    border: none;
+    background-color: black;
+}
+
+@media (width <= 578px) {
+    main {
+        display: inline;
+    }
+
+    #section-1 {
+        max-width: 90%;
+    }
+    
+    #section-2 {
+        max-width: 90%;
+    }
+    
+    #section-3 {
+        max-width: 90%;
+    }
+}

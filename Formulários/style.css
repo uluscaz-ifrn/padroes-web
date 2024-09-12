@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: rgba(32, 178, 171, 0.596);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 400px;
+    border-radius: 5px;
+}
+
+form > input[type="button"] {
+    align-items: end;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(35, 78, 54);
+}
+
+div {
+    width: 100%;
+}
+
+div > input {
+    display: block;
+    margin-top: 5px;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+div > input[type="color"] {
+    width: 20%;
+}
+
+div > input[type="radio"] {
+    width: 30%;
+}
+
+.selection {
+    color: black;
+    font-weight: normal;
+}
+
+input[type="button"] {
+    width: 40%;
+    cursor: pointer;
+}

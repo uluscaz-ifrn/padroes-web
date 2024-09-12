@@ -1,0 +1,25 @@
+/* style.css */
+body {
+    background-color: #e0e0e0;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  header div {
+    color: red;
+  }
+  
+  main {
+    padding: 15px;
+  }
+  
+  .highlight {
+    background-color: yellow;
+    padding: 5px;
+  }
+  
+  #content {
+    border: 3px solid blue;
+  }

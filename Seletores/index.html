@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* strong + s {
+            color: red;
+        } */
+        strong ~ s {
+            color: red;
+        }
+        p > strong {
+            color: purple;
+        }
+        /* ul > li > strong {
+            color: blue;
+        } */
+        ul strong, p strong {
+            color: blue !important;
+        }
+        p>strong {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li><strong>Item 3</strong></li>
+    </ul>
+    <p><span>Lorem ipsum dolor, sit amet <strong>consectetur</strong></span> adipisicing elit. <s>Obcaecati</s> eaque a porro soluta. Amet voluptate corrupti, quam, eius ipsa aspernatur at voluptas culpa <s>officiis</s> reiciendis quidem enim id deserunt doloremque.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam fuga, at cumque ducimus placeat <strong>accusantium</strong> repellat veniam <s>corporis</s> quam voluptatum blanditiis iste nihil labore velit ipsam molestiae, assumenda, natus dolorem?</p>
+</body>
+</html>
