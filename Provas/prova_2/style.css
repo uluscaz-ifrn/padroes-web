@@ -1,0 +1,148 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header, main, footer {
+    padding: 20px;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+/* Corpo Principal */
+.intro {
+    text-align: center;
+    background-color: #00aaff;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Seção de Galeria */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.image-box {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.image-box p {
+    font-size: 1em;
+    color: #333;
+}
+
+.image-box span {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.contact {
+    text-align: right;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
